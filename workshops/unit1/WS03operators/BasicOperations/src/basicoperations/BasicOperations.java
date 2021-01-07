@@ -20,6 +20,10 @@ public class BasicOperations {
         int addend1;
         int addend2;
         
+        addend1 = 5;
+        addend2 = 18;
+        
+        
         int minuend;
         int subtrahend;
         int difference;
@@ -27,9 +31,21 @@ public class BasicOperations {
         minuend = -23;
         subtrahend = -6;
         
-        // initilization
-        addend1 = 5;
-        addend2 = 18;
+        int multiplying;
+        int multiplier;
+        int product;
+        
+        multiplying = 13;
+        multiplier = 2;
+        
+        int dividend;
+        int divisor;
+        int quotlent;
+        
+        dividend = 16;
+        divisor = 4;
+        
+        int module;
         
         //operation
         sum = addend1 +addend2;
@@ -51,7 +67,20 @@ public class BasicOperations {
         
         
         System.out.println("The subtraction of " + minuend + " - " + subtrahend + 
-                "is equal to --> " + (minuend-subtrahend));
+                " is equal to --> " + (minuend-subtrahend));
+        
+        
+        System.out.println("The multiplication of " + multiplying + " * " + multiplier + 
+                " is equal to --> " + (multiplying*multiplier));
+        
+        
+        System.out.println("The division of " + dividend + " / " + divisor + 
+                " is equal to --> " + (dividend/divisor));
+        
+        
+        System.out.println(" The modulo of the division " + dividend + " / " + divisor + 
+                " is equal to --> " + (divisor/dividend));
+        
     }
     
 }
