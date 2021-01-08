@@ -23,7 +23,6 @@ public class BasicOperations {
         addend1 = 5;
         addend2 = 18;
         
-        
         int minuend;
         int subtrahend;
         int difference;
@@ -47,13 +46,12 @@ public class BasicOperations {
         
         int module;
         
-        //operation
         sum = addend1 +addend2;
         
         System.out.println("The addition of " + addend1 + " + " +  addend2 + 
                 " is equal to --> " + sum);
        
-        
+  
         ++sum;
         System.out.println("sum is equal to --> " + sum);
         
