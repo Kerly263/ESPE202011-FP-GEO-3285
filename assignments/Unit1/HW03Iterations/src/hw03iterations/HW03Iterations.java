@@ -38,5 +38,3 @@ public class HW03Iterations {
         }
     }
 }
-                    System.out.println("The subtraction is");
-                    System.out.println("The division is");

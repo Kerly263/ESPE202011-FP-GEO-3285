@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package ws07menus;
+import java.util.Scanner;
 
 /**
  *
