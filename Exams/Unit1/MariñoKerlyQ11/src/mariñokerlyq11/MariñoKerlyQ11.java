@@ -18,8 +18,8 @@ public class MariñoKerlyQ11 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
-                Scanner input = new Scanner(System.in);
+
+        Scanner input = new Scanner(System.in);
         boolean mainLoop = true;
 
         int option;
@@ -55,5 +55,7 @@ public class MariñoKerlyQ11 {
                 default:
                     System.out.println("Invalid option\n\n\n");
                     break;
-    }   
+            }
+        }  
+    }
 }
