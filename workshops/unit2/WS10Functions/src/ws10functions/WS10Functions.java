@@ -36,6 +36,11 @@ public class WS10Functions {
         y = f(x);
         System.out.println("the square of -> " + x + " <- is equal to -> " + y);
 
+        int number = 5;
+        int fact = 0;
+        fact = factorial(number);
+        System.out.println("factorial of " + number + " is equal to -> " + fact);
+
     }
 
     public static float divideTwoNumbers(int dividend, int divisor) {
@@ -62,5 +67,16 @@ public class WS10Functions {
 
         return y;
     }
-
+    
+    public static int factorial(int n) {
+        if (n < 0) {
+            return -1;
+        } else {
+            if (n == 0) {
+                return 1;
+            } else {
+                return (n * factorial(n - 1));
+            }
+        }
+    }
 }

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package hw10.functions;
+package ws11.functionsandrecursion;
 
 import java.util.Scanner;
 
@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author USER
  */
-public class HW10Functions {
+public class WS11FunctionsAndRecursion {
 
     /**
      * @param args the command line arguments
@@ -26,7 +26,6 @@ public class HW10Functions {
 
         int y = 0;
         int x = 0;
-        int number;
         int result;
 
         int top = 12;
@@ -34,6 +33,7 @@ public class HW10Functions {
         int table;
         int multiplying;
 
+        
 
         System.out.println(" ～～ WELCOME ～～");
 
@@ -60,11 +60,17 @@ public class HW10Functions {
         System.out.println(" -- Multiplication table  --");
         System.out.println("Please enter the number to multiply -->");
         multiplying = input.nextInt();
-        for (int multiplier = 1 ; multiplier <= top ; multiplier++) {
-            product = ShowTheMultiplicationTable (multiplying, multiplier);
+        for (int multiplier = 1; multiplier <= top; multiplier++) {
+            product = ShowTheMultiplicationTable(multiplying, multiplier);
             System.out.println(+multiplying + "*" + multiplier + "=" + product);
-
         }
+        
+        
+        System.out.println(" -- Factorial  --");
+        int number = 5;
+        int fact = 0;
+        fact = factorial(number);
+        System.out.println("factorial of " + number + " is equal to -> " + fact);
 
     }
 
@@ -96,10 +102,20 @@ public class HW10Functions {
     public static int ShowTheMultiplicationTable(int multiplying, int multiplier) {
         int product;
 
-        product = multiplying*multiplier;
+        product = multiplying * multiplier;
 
         return product;
-
     }
 
+    public static int factorial(int n) {
+        if (n < 0) {
+            return -1;
+        } else {
+            if (n == 0) {
+                return 1;
+            } else {
+                return (n * factorial(n - 1));
+            }
+        }
+    }   
 }
