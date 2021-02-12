@@ -67,7 +67,7 @@ public class WS11FunctionsAndRecursion {
         
         
         System.out.println(" -- Factorial  --");
-        int number = 5;
+        int number = 0;
         int fact = 0;
         fact = factorial(number);
         System.out.println("factorial of " + number + " is equal to -> " + fact);
