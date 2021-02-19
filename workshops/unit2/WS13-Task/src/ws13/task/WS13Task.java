@@ -45,7 +45,7 @@ public class WS13Task {
                     D = input.nextInt();
                     System.out.println("Enter the minor diagonal --> ");
                     d = input.nextInt();
-                    area = AreaRhombus(D, d);
+                    area = ComputeAreaRhombus(D, d);
                     System.out.println(" The area of a rhombus is --> " + area);
                     break;
                 case 2:
@@ -53,7 +53,7 @@ public class WS13Task {
                     double π = 3.14;
                     System.out.println("Enter the radius -> ");
                     r = input.nextInt();
-                    area = AreaCircule(r, π);
+                    area = ComputeAreaCircule(r, π);
                     System.out.println(" The area of triangle --> " + area);
                     break;
                 case 3:
@@ -66,7 +66,7 @@ public class WS13Task {
                     b = input.nextInt();
                     System.out.println("Enter the height --> ");
                     h = input.nextInt();
-                    area = Areatrapeze(B, b, h);
+                    area = ComputeAreatrapeze(B, b, h);
                     System.out.println(" The area of trapeze is --> " + area);
                     break;
                 case 4:
@@ -78,7 +78,7 @@ public class WS13Task {
                     m = input.nextInt();
                     System.out.println("Enter the speed in (m / s) --> ");
                     v = input.nextInt();
-                    Ec = KineticEnergys(v, m);
+                    Ec = ComputeTheKineticEnergys(v, m);
                     System.out.println(" The Kinetic energys is --> " + Ec);
                     break;
                 case 5:
@@ -89,7 +89,7 @@ public class WS13Task {
                     k = input.nextInt();
                     System.out.println("deformation (m -> ");
                     x = input.nextInt();
-                    Epe = (int) ElasticPotentialEnergy(k, x);
+                    Epe = (int) ComputeTheElasticPotentialEnergy(k, x);
                     System.out.println("The elastic potential energy is --> " + Epe);
                     break;
                 case 6:
@@ -100,7 +100,7 @@ public class WS13Task {
                     F = input.nextInt();
                     System.out.println("Enter the displacement (m) --> ");
                     displacement = input.nextInt();
-                    W = (int) MechanicalWork(F, displacement);
+                    W = (int) ComputeTheMechanicalWork(F, displacement);
                     System.out.println(" The Mechanical work --> " + W);
                     break;
 
@@ -115,7 +115,7 @@ public class WS13Task {
         } while (option != 7);
     }
 
-    public static float AreaRhombus(int D, int d) {
+    public static float ComputeAreaRhombus(int D, int d) {
         float area = 0.0F;
 
         area = (D * d) / 2;
@@ -123,7 +123,7 @@ public class WS13Task {
         return area;
     }
 
-    public static float AreaCircule(int r, double π) {
+    public static float ComputeAreaCircule(int r, double π) {
         float area = 0.0F;
 
         area = (float) (π * (r * r));
@@ -131,7 +131,7 @@ public class WS13Task {
         return area;
     }
 
-    public static float Areatrapeze(int B, int b, int h) {
+    public static float ComputeAreatrapeze(int B, int b, int h) {
         float area = 0.0F;
 
         area = ((B + b) * h) / 2;
@@ -139,7 +139,7 @@ public class WS13Task {
         return area;
     }
 
-    public static float KineticEnergys(int v, float m) {
+    public static float ComputeTheKineticEnergys(int v, float m) {
         float Ec = 0.0F;
 
         Ec = m * (v * v) / 2;
@@ -147,7 +147,7 @@ public class WS13Task {
         return Ec;
     }
 
-    public static float ElasticPotentialEnergy(float k, int x) {
+    public static float ComputeTheElasticPotentialEnergy(float k, int x) {
         float Epe = 0.0F;
 
         Epe = (int) (k * (x * x) / 2);
@@ -155,7 +155,7 @@ public class WS13Task {
         return Epe;
     }
 
-    public static float MechanicalWork(int F, int displacement) {
+    public static float ComputeTheMechanicalWork(int F, int displacement) {
         float W = 0.0F;
 
         W = F * displacement;
