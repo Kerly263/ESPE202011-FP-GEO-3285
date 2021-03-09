@@ -16,6 +16,8 @@ public class WS10Functions {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        System.out.println("AUTHOR: KERLY NAYELI MARIÑO");
+        
         int divd = 5;
         int divr = 10;
         float quotient = 0;
